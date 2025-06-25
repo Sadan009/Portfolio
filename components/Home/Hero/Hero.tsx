@@ -5,7 +5,10 @@ import { FaDownload } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <div className="w-full pt-[4vh] md:pt-[12vh] h-screen bg-[#0f0715] overflow-hidden relative text-white" id="hero">
+    <div
+      className="w-full pt-[4vh] md:pt-[12vh] h-screen bg-[#0f0715] overflow-hidden relative text-white"
+      id="hero"
+    >
       <div className="flex justify-center flex-col w-4/5 h-full mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
           {/* Text Content */}
@@ -50,7 +53,7 @@ const Hero = () => {
             className="mx-auto hidden lg:block rounded-[3rem] border-[3.5px] border-blue-950 overflow-hidden"
           >
             <Image
-              src="/images/"
+              src="/images/Sady.jpeg"
               alt={BaseInfo.name}
               width={300}
               height={400}
