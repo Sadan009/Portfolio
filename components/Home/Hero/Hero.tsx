@@ -50,7 +50,7 @@ const Hero = () => {
             className="mx-auto hidden lg:block rounded-[3rem] border-[3.5px] border-blue-950 overflow-hidden"
           >
             <Image
-              src={BaseInfo.profilePic}
+              src="/images/"
               alt={BaseInfo.name}
               width={300}
               height={400}
