@@ -4,12 +4,11 @@ const ContactForm = () => {
   return (
     <div className="bg-[#140c1c] rounded-lg p-4 sm:p-10">
       <h1 className="text-bg text-2xl md:text-3xl py-2 lg:text-[2.5rem] font-bold">
-        Let's Work Together
+        Let&apos;s Work Together
       </h1>
       <p className="text-gray-200 mt-3 lg:text-base text-xs md:text-sm">
         Have a project in mind or need a developer to bring your ideas to life?
-         <br /> let's collaborate and
-        build something great together.
+        <br /> let&apos;s collaborate and build something great together.
       </p>
       {/* Input Fields */}
       <form className="mt-8 block w-full overflow-hidden">
