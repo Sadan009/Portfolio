@@ -15,7 +15,7 @@ export const FlipWords = ({
   const [currentWord, setCurrentWord] = useState(words[0]);
   const [isAnimating, setIsAnimating] = useState<boolean>(false);
 
-  // thanks for the fix Julian - https://github.com/Julian-AT
+  // pick the next word in the list
   const startAnimation = useCallback(() => {
     const word = words[words.indexOf(currentWord) + 1] || words[0];
     setCurrentWord(word);
@@ -23,10 +23,12 @@ export const FlipWords = ({
   }, [currentWord, words]);
 
   useEffect(() => {
-    if (!isAnimating)
-      setTimeout(() => {
+    if (!isAnimating) {
+      const timeout = setTimeout(() => {
         startAnimation();
       }, duration);
+      return () => clearTimeout(timeout);
+    }
   }, [isAnimating, duration, startAnimation]);
 
   return (
@@ -36,19 +38,9 @@ export const FlipWords = ({
       }}
     >
       <motion.div
-        initial={{
-          opacity: 0,
-          y: 10,
-        }}
-        animate={{
-          opacity: 1,
-          y: 0,
-        }}
-        transition={{
-          type: "spring",
-          stiffness: 100,
-          damping: 10,
-        }}
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ type: "spring", stiffness: 100, damping: 10 }}
         exit={{
           opacity: 0,
           y: -40,
@@ -57,20 +49,19 @@ export const FlipWords = ({
           scale: 2,
           position: "absolute",
         }}
-        className={twMerge("z-10 inline-block relative text-left", className)}
+        className={twMerge(
+          "z-10 inline-block relative text-left text-white", // ✅ text-white default
+          className // ✅ can override if you pass another text color
+        )}
         key={currentWord}
       >
-        {/* edit suggested by Sajal: https://x.com/DewanganSajal */}
         {currentWord.split(" ").map((word, wordIndex) => (
           <motion.span
             key={word + wordIndex}
             initial={{ opacity: 0, y: 10, filter: "blur(8px)" }}
             animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-            transition={{
-              delay: wordIndex * 0.3,
-              duration: 0.3,
-            }}
-            className="inline-block whitespace-nowrap"
+            transition={{ delay: wordIndex * 0.3, duration: 0.3 }}
+            className="inline-block whitespace-nowrap text-inherit" // ✅ inherits parent text color
           >
             {word.split("").map((letter, letterIndex) => (
               <motion.span
@@ -81,7 +72,7 @@ export const FlipWords = ({
                   delay: wordIndex * 0.3 + letterIndex * 0.05,
                   duration: 0.2,
                 }}
-                className="inline-block"
+                className="inline-block text-inherit" // ✅ inherits parent text color
               >
                 {letter}
               </motion.span>

@@ -14,8 +14,8 @@ const About = () => {
         <div className="w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mt-20">
           {/* TextContent */}
           <div data-aos="fade-left" data-aos-delay="1000">
-            <h1 className="text-bg text-[26px] sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-200">
-              Crafting <FlipWords words={["Web", "Mobile"]} className="text-white" /> Applications with Passion and Precision
+            <h1 className=" text-[26px] sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-200">
+              Crafting <FlipWords words={["Web", "Mobile"]} className="text-blue-500" /> Applications with Passion and Precision
             </h1>
             <p className="mt-6 text-gray-500 text-base">
               {aboutInfo.description}

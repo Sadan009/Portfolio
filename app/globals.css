@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+/* styles/globals.css */
+::selection {
+  background: #9712cb; /* navy */
+  color: #fff;         /* white */
+}
+
+
 @layer components {
   .nav_link {
     @apply relative text-base font-medium w-fit block after:block after:content-[''] after:absolute after:h-[3px]
