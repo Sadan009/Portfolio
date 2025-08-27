@@ -11,7 +11,7 @@ export const aboutInfo = {
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
   client: "N/A",
-  experience: "6 M+",
+  experience: "1 yr+",
   project: "20+",
   website: "10+",
 };

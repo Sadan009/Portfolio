@@ -10,13 +10,16 @@
   },
   "dependencies": {
     "aos": "^3.0.0-beta.6",
+    "clsx": "^2.1.1",
     "framer-motion": "^12.0.5",
+    "motion": "^12.23.12",
     "next": "15.1.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.4.0",
     "react-multi-carousel": "^2.8.5",
-    "react-parallax-tilt": "^1.7.274"
+    "react-parallax-tilt": "^1.7.274",
+    "tailwind-merge": "^3.3.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
