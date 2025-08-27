@@ -174,7 +174,7 @@ export const skillsData = [
   {
     id: 10,
     title: "TailwindCSS",
-    image: "/images/TailwindCSS.png",
+    image: "/images/TailwindCSS.svg",
     percent: "90%",
   },
 ];
