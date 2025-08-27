@@ -1,6 +1,7 @@
 import { BaseInfo } from "@/Data/data";
 import React from "react";
 import { FaDownload } from "react-icons/fa";
+import Image from "next/image";
 
 const Hero = () => {
   return (
@@ -19,6 +20,7 @@ const Hero = () => {
               >
                 I am {BaseInfo.name}
               </h1>
+
               {/* Title */}
               <h1
                 data-aos="fade-right"
@@ -27,7 +29,8 @@ const Hero = () => {
               >
                 {BaseInfo.position}
               </h1>
-              {/* desc */}
+
+              {/* Description */}
               <p
                 data-aos="fade-left"
                 data-aos-delay="200"
@@ -35,6 +38,8 @@ const Hero = () => {
               >
                 {BaseInfo.description}
               </p>
+
+              {/* Download Resume */}
               <a
                 href="/images/SadanImam_Resume.pdf"
                 download="Sadan_Resume.pdf"
@@ -49,18 +54,20 @@ const Hero = () => {
                 </button>
               </a>
             </div>
-            {/* Image content */}
+
+            {/* Image Content */}
             <div
               data-aos="zoom-in-down"
               data-aos-delay="400"
-              className="mx-auto hidden  md:block lg:block rounded-[3rem] border-[3.5px] border-blue-950"
+              className="mx-auto hidden md:block lg:block rounded-[3rem] border-[3.5px] border-blue-950"
             >
-              <img
+              <Image
                 src="/images/Sady.jpeg"
                 alt={BaseInfo.name}
                 width={300}
                 height={400}
-                style={{ borderRadius: "3rem" }}
+                className="rounded-[3rem]"
+                priority
               />
             </div>
           </div>
