@@ -125,7 +125,7 @@ export const skillsData = [
   {
     id: 2,
     title: "React Native",
-    image: "/images/react-native.svg",
+    image: "/images/react-native.png",
     percent: "60%",
   },
   {
