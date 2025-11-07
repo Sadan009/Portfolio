@@ -38,13 +38,17 @@ const Nav = () => {
     <div
       className={`fixed ${
         navBg ? "bg-[#000]" : "fixed"
-      } h-[15vh] z-[10]  w-full transition-all duration-200`}
+      } h-[15vh] z-[20]  w-full transition-all duration-200`}
       onClick={closeNav}
       id="nav"
     >
       <div className="flex items-center h-full justify-between w-[95%] sm:w-[90%] xl:w-[80%] mx-auto">
         {/* Logo */}
-        <img src="/images/panda-logo.png" alt="Sadan Imam" className="lg:h-56 lg:w-56 md:h-48 md:w-48 w-32 h-32 sm:w-28 sm:h-28 " />
+        <img
+          src="/images/panda-logo.png"
+          alt="Sadan Imam"
+          className="lg:h-56 lg:w-56 md:h-48 md:w-48 w-32 h-32 sm:w-28 sm:h-28 "
+        />
         {/* <h1 className="font-semibold text-2xl tracking-widest ml-[-1.5rem] sm:ml-[0] text-white">
           Sadan Imam
         </h1> */}
@@ -62,7 +66,10 @@ const Nav = () => {
           </div>
           {/* Buttons */}
           <div className="flex items-center  space-x-4">
-            <a href="#contact" className="md:px-10 md:py-3 lg:px-8 lg:py-3 p-1 text-blue-800 font-semibold sm:text-base lg:text-lg text-sm bg-white hover:bg-gray-400 transition-all duration-200 rounded-lg">
+            <a
+              href="#contact"
+              className="md:px-10 md:py-3 lg:px-8 lg:py-3 p-1 text-blue-800 font-semibold sm:text-base lg:text-lg text-sm bg-white hover:bg-gray-400 transition-all duration-200 rounded-lg"
+            >
               Hire Me
             </a>
             {/* Burger Menu */}

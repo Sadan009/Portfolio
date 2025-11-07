@@ -13,9 +13,11 @@ const About = () => {
         <SectionHeading>About Me</SectionHeading>
         <div className="w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mt-20">
           {/* TextContent */}
-          <div data-aos="fade-left" data-aos-delay="1000">
+          <div>
             <h1 className=" text-[26px] sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-200">
-              Crafting <FlipWords words={["Web", "Mobile"]} className="text-blue-500" /> Applications with Passion and Precision
+              Crafting{" "}
+              <FlipWords words={["Web", "Mobile"]} className="text-blue-500" />{" "}
+              Applications with Passion and Precision
             </h1>
             <p className="mt-6 text-gray-500 text-base">
               {aboutInfo.description}
@@ -48,12 +50,7 @@ const About = () => {
             </div>
           </div>
           {/* Stats content */}
-          <div
-            data-aos="zoom-out"
-            data-aos-delay="100"
-            data-aos-anchor-placement="top-center"
-            className="grid grid-cols-2 gap-16 items-center lg:mx-auto"
-          >
+          <div className="grid grid-cols-2 gap-16 items-center lg:mx-auto">
             {/* Second Stat: */}
             <div>
               <Image

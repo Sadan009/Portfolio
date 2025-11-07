@@ -42,8 +42,6 @@ const Slider = () => {
           <div
             key={review.image}
             className="flex-shrink-0"
-            data-aos="fade-up"
-            data-aos-delay={`${i * 50}`}
           >
             {/* Review Card */}
             <ReviewCard review={review} />

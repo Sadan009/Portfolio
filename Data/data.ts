@@ -1,8 +1,8 @@
 export const BaseInfo = {
   name: "Sadan Imam",
-  position: "Full Stack Web Developer",
+  position: "Web Developer",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit porro numquam ad, vero consequuntur aperiam cumque voluptatum pariatur veniam? Qui facilis est ipsam odio cum!",
+    "I design and develop fast, responsive, and modern web & mobile apps. With over a year of hands-on experience, I turn ideas into powerful digital products.",
   profilePic: "/images/Sady.jpeg",
 };
 

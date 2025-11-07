@@ -13,9 +13,6 @@ const Project = () => {
           return (
             <div
               key={project.id}
-              data-aos="zoom-out"
-              data-aos-delay={`${i * 90}`}
-              data-aos-anchor-placement="top-center"
               className="bg-blue-950 p-6 rounded-lg hover:scale-105 transition-all duration-300"
             >
               <Link href={project.url} target="_blank" >
